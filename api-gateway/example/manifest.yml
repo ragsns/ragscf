@@ -1,0 +1,9 @@
+---
+applications:
+ - name: example
+   memory: 512M
+   instances: 1
+   buildpack: https://github.com/spring-io/java-buildpack
+   path: target/example-1.0-SNAPSHOT-runnable.jar
+   services:
+    - api-gateway

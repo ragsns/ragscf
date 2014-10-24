@@ -1,0 +1,115 @@
+tempest@tempest:~$ bundle exec bosh vms
+Deployment `app-autoscaling-9f3508fc17af55279cb2'
+
+Director task 147
+
+Task 147 done
+
++-----------------+---------+--------------------+--------------+
+| Job/index       | State   | Resource Pool      | IPs          |
++-----------------+---------+--------------------+--------------+
+| unknown/unknown | running | deploy-autoscaling | 192.168.5.61 |
+| unknown/unknown | running | destroy-broker     | 192.168.5.60 |
+| unknown/unknown | running | register-broker    | 192.168.5.58 |
++-----------------+---------+--------------------+--------------+
+
+VMs total: 3
+Deployment `cf-b7a2394d1f088b9e9660'
+
+Director task 148
+
+Task 148 done
+
++----------------------------------------------------------------+---------+--------------------------------------------------------------+---------------+
+| Job/index                                                      | State   | Resource Pool                                                | IPs           |
++----------------------------------------------------------------+---------+--------------------------------------------------------------+---------------+
+| unknown/unknown                                                | running | acceptance-tests                                             | 192.168.5.37  |
+| unknown/unknown                                                | running | push-app-usage-service                                       | 192.168.5.17  |
+| unknown/unknown                                                | running | push-console                                                 | 192.168.5.16  |
+| unknown/unknown                                                | running | smoke-tests                                                  | 192.168.5.20  |
+| ccdb-partition-f186b1e4eb66d5a65ad8/0                          | running | ccdb-partition-f186b1e4eb66d5a65ad8                          | 192.168.5.10  |
+| clock_global-partition-f186b1e4eb66d5a65ad8/0                  | running | clock_global-partition-f186b1e4eb66d5a65ad8                  | 192.168.5.40  |
+| cloud_controller-partition-f186b1e4eb66d5a65ad8/0              | running | cloud_controller-partition-f186b1e4eb66d5a65ad8              | 192.168.5.39  |
+| cloud_controller_worker-partition-f186b1e4eb66d5a65ad8/0       | running | cloud_controller_worker-partition-f186b1e4eb66d5a65ad8       | 192.168.5.41  |
+| consoledb-partition-f186b1e4eb66d5a65ad8/0                     | running | consoledb-partition-f186b1e4eb66d5a65ad8                     | 192.168.5.18  |
+| dea-partition-f186b1e4eb66d5a65ad8/0                           | running | dea-partition-f186b1e4eb66d5a65ad8                           | 192.168.5.12  |
+| etcd_server-partition-f186b1e4eb66d5a65ad8/0                   | running | etcd_server-partition-f186b1e4eb66d5a65ad8                   | 192.168.5.7   |
+| ha_proxy-partition-f186b1e4eb66d5a65ad8/0                      | running | ha_proxy-partition-f186b1e4eb66d5a65ad8                      | 192.168.5.100 |
+| health_manager-partition-f186b1e4eb66d5a65ad8/0                | running | health_manager-partition-f186b1e4eb66d5a65ad8                | 192.168.5.38  |
+| loggregator-partition-f186b1e4eb66d5a65ad8/0                   | running | loggregator-partition-f186b1e4eb66d5a65ad8                   | 192.168.5.21  |
+| loggregator_trafficcontroller-partition-f186b1e4eb66d5a65ad8/0 | running | loggregator_trafficcontroller-partition-f186b1e4eb66d5a65ad8 | 192.168.5.22  |
+| login-partition-f186b1e4eb66d5a65ad8/0                         | running | login-partition-f186b1e4eb66d5a65ad8                         | 192.168.5.11  |
+| mysql-partition-f186b1e4eb66d5a65ad8/0                         | running | mysql-partition-f186b1e4eb66d5a65ad8                         | 192.168.5.19  |
+| nats-partition-f186b1e4eb66d5a65ad8/0                          | running | nats-partition-f186b1e4eb66d5a65ad8                          | 192.168.5.6   |
+| nfs_server-partition-f186b1e4eb66d5a65ad8/0                    | running | nfs_server-partition-f186b1e4eb66d5a65ad8                    | 192.168.5.9   |
+| router-partition-f186b1e4eb66d5a65ad8/0                        | running | router-partition-f186b1e4eb66d5a65ad8                        | 192.168.5.14  |
+| uaa-partition-f186b1e4eb66d5a65ad8/0                           | running | uaa-partition-f186b1e4eb66d5a65ad8                           | 192.168.5.8   |
+| uaadb-partition-f186b1e4eb66d5a65ad8/0                         | running | uaadb-partition-f186b1e4eb66d5a65ad8                         | 192.168.5.15  |
++----------------------------------------------------------------+---------+--------------------------------------------------------------+---------------+
+
+VMs total: 22
+Deployment `p-gateway-dashboard-b61f39b62d9e93f67d11'
+
+Director task 149
+
+Task 149 done
+
++-----------------+---------+------------------------+--------------+
+| Job/index       | State   | Resource Pool          | IPs          |
++-----------------+---------+------------------------+--------------+
+| unknown/unknown | running | broker-deregistrar     | 192.168.5.64 |
+| unknown/unknown | running | broker-registrar       | 192.168.5.62 |
+| unknown/unknown | running | push-gateway-dashboard | 192.168.5.65 |
++-----------------+---------+------------------------+--------------+
+
+VMs total: 3
+Deployment `p-jenkins-95f3d74e5354a081bf60'
+
+Director task 150
+
+Task 150 done
+
++-------------------------------------------------+---------+-----------------------------------------------+--------------+
+| Job/index                                       | State   | Resource Pool                                 | IPs          |
++-------------------------------------------------+---------+-----------------------------------------------+--------------+
+| unknown/unknown                                 | running | jenkins_cf_bootstrap                          | 192.168.5.53 |
+| unknown/unknown                                 | running | jenkins_cf_unbootstrap                        | 192.168.5.55 |
+| jenkins_master-partition-f186b1e4eb66d5a65ad8/0 | running | jenkins_master-partition-f186b1e4eb66d5a65ad8 | 192.168.5.50 |
+| jenkins_slave-partition-f186b1e4eb66d5a65ad8/0  | running | jenkins_slave-partition-f186b1e4eb66d5a65ad8  | 192.168.5.51 |
++-------------------------------------------------+---------+-----------------------------------------------+--------------+
+
+VMs total: 4
+Deployment `p-metrics-302dd803a0c1d8b36c51'
+
+Director task 151
+
+Task 151 done
+
++------------------------------------------+---------+----------------------------------------+--------------+
+| Job/index                                | State   | Resource Pool                          | IPs          |
++------------------------------------------+---------+----------------------------------------+--------------+
+| maximus-partition-f186b1e4eb66d5a65ad8/0 | running | maximus-partition-f186b1e4eb66d5a65ad8 | 192.168.5.66 |
++------------------------------------------+---------+----------------------------------------+--------------+
+
+VMs total: 1
+Deployment `p-mysql-254dfd05083c56a3b905'
+
+Director task 152
+
+Task 152 done
+
++--------------------------------------------------+---------+------------------------------------------------+--------------+
+| Job/index                                        | State   | Resource Pool                                  | IPs          |
++--------------------------------------------------+---------+------------------------------------------------+--------------+
+| unknown/unknown                                  | running | acceptance-tests                               | 192.168.5.45 |
+| unknown/unknown                                  | running | broker-deregistrar                             | 192.168.5.47 |
+| unknown/unknown                                  | running | broker-registrar                               | 192.168.5.44 |
+| cf-mysql-broker-partition-f186b1e4eb66d5a65ad8/0 | running | cf-mysql-broker-partition-f186b1e4eb66d5a65ad8 | 192.168.5.43 |
+| mysql-partition-f186b1e4eb66d5a65ad8/0           | running | mysql-partition-f186b1e4eb66d5a65ad8           | 192.168.5.42 |
++--------------------------------------------------+---------+------------------------------------------------+--------------+
+
+VMs total: 5
+tempest@tempest:~$
+tempest@tempest:~$
+tempest@tempest:~$
+

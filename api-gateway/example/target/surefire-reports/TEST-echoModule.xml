@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="1" errors="0" failures="0" time="0.125" timestamp="2014-10-24T14:04:33">
+		<testcase classname="echoModule" name="echoModule #echo returns an object containing the message it recieved " time="0.052">
+		</testcase>
+	</testsuite>
+</testsuites>
+
