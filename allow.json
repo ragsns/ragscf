@@ -1,0 +1,16 @@
+[
+  {
+    "protocol":"udp",
+    "destination":"0.0.0.0/0",
+    "ports":"24833"
+  },
+  {
+    "protocol":"tcp",
+    "destination":"192.168.5.0/24",
+    "ports":"3306"
+  },
+  {
+    "protocol":"tcp",
+    "destination":"69.27.44.146",
+    "ports":"443"}
+]
